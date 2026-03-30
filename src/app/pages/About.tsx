@@ -1,34 +1,37 @@
 import { Award, Users, Globe, TrendingUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function About() {
+  const { t } = useTranslation();
+
   const values = [
     {
       icon: Award,
-      title: "Excelencia",
-      description: "Comprometidos con los más altos estándares de calidad en todos nuestros productos y servicios"
+      title: t('about.values.excellence.title'),
+      description: t('about.values.excellence.description')
     },
     {
       icon: Users,
-      title: "Integridad",
-      description: "Actuamos con transparencia y ética en todas nuestras operaciones empresariales"
+      title: t('about.values.integrity.title'),
+      description: t('about.values.integrity.description')
     },
     {
       icon: Globe,
-      title: "Sostenibilidad",
-      description: "Desarrollamos prácticas responsables con el medio ambiente y las comunidades"
+      title: t('about.values.sustainability.title'),
+      description: t('about.values.sustainability.description')
     },
     {
       icon: TrendingUp,
-      title: "Innovación",
-      description: "Invertimos constantemente en tecnología para mejorar nuestros procesos"
+      title: t('about.values.innovation.title'),
+      description: t('about.values.innovation.description')
     }
   ];
 
   const stats = [
-    { number: "30+", label: "Años de Experiencia" },
-    { number: "500+", label: "Clientes Satisfechos" },
-    { number: "32", label: "Productos Especializados" },
-    { number: "15", label: "Países de Operación" }
+    { number: "30+", label: t('about.stats.experience') },
+    { number: "500+", label: t('about.stats.clients') },
+    { number: "32", label: t('about.stats.products') },
+    { number: "15", label: t('about.stats.countries') }
   ];
 
   return (
@@ -45,10 +48,10 @@ export function About() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            Nosotros
+            {t('about.title')}
           </h1>
           <p className="text-xl md:text-2xl">
-            Líderes en la Industria Energética
+            {t('about.subtitle')}
           </p>
         </div>
       </section>
@@ -56,24 +59,16 @@ export function About() {
       {/* Company Story */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-center">Nuestra Historia</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center">{t('about.ourStory')}</h2>
           <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
             <p>
-              Desde 1995, <strong>PetroEnergy</strong> se ha consolidado como uno de los principales 
-              proveedores de productos petrolíferos y derivados en la región. Nuestra trayectoria 
-              está marcada por un compromiso inquebrantable con la calidad, la innovación y la 
-              satisfacción del cliente.
+              {t('about.story1')}
             </p>
             <p>
-              Comenzamos como una pequeña distribuidora local y, gracias a la confianza de nuestros 
-              clientes y al trabajo dedicado de nuestro equipo, hemos crecido hasta convertirnos en 
-              una empresa con presencia internacional, operando en más de 15 países y atendiendo a 
-              diversos sectores industriales.
+              {t('about.story2')}
             </p>
             <p>
-              Hoy en día, contamos con instalaciones de refinación y almacenamiento de última generación, 
-              un equipo de más de 2,000 profesionales altamente capacitados, y una red de distribución 
-              que garantiza entregas puntuales y eficientes a todos nuestros clientes.
+              {t('about.story3')}
             </p>
           </div>
         </div>
@@ -99,7 +94,7 @@ export function About() {
 
       {/* Values Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold mb-12 text-center">Nuestros Valores</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">{t('about.ourValues')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => {
             const Icon = value.icon;
@@ -123,21 +118,15 @@ export function About() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-bold mb-4 text-blue-600">Misión</h2>
+              <h2 className="text-3xl font-bold mb-4 text-blue-600">{t('about.mission')}</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Proveer soluciones energéticas de la más alta calidad, garantizando 
-                el suministro confiable de productos petrolíferos que impulsen el desarrollo 
-                económico de nuestros clientes y contribuyan al progreso de las comunidades 
-                donde operamos, siempre con responsabilidad social y ambiental.
+                {t('about.missionText')}
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-bold mb-4 text-blue-600">Visión</h2>
+              <h2 className="text-3xl font-bold mb-4 text-blue-600">{t('about.vision')}</h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Ser reconocidos como la empresa líder en el sector energético, destacando 
-                por nuestra innovación, sostenibilidad y compromiso con la excelencia. 
-                Aspiramos a expandir nuestra presencia global mientras mantenemos nuestros 
-                valores fundamentales y contribuimos a un futuro energético más limpio y eficiente.
+                {t('about.visionText')}
               </p>
             </div>
           </div>
@@ -158,11 +147,10 @@ export function About() {
         <div className="relative z-10 h-full flex items-center justify-center text-white text-center px-4">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Nuestro Equipo
+              {t('about.ourTeam')}
             </h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Profesionales comprometidos trabajando cada día para ofrecerte 
-              las mejores soluciones energéticas
+              {t('about.teamText')}
             </p>
           </div>
         </div>
