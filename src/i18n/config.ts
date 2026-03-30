@@ -81,6 +81,44 @@ const resources = {
         ourTeam: 'Nuestro Equipo',
         teamText: 'Profesionales comprometidos trabajando cada día para ofrecerte las mejores soluciones energéticas'
       },
+      contact: {
+        title: 'Contáctanos',
+        subtitle: 'Estamos aquí para ayudarte',
+        address: 'Dirección',
+        phone: 'Teléfono',
+        email: 'Email',
+        schedule: 'Horario',
+        scheduleDetails: 'Lunes - Viernes\n8:00 AM - 6:00 PM\nSábados: 9:00 AM - 2:00 PM',
+        sendMessage: 'Envíanos un Mensaje',
+        messageSent: '¡Mensaje Enviado!',
+        thankYou: 'Gracias por contactarnos. Nos pondremos en contacto contigo pronto.',
+        form: {
+          fullName: 'Nombre Completo',
+          email: 'Email',
+          phone: 'Teléfono',
+          company: 'Empresa',
+          message: 'Mensaje',
+          namePlaceholder: 'Juan Pérez',
+          emailPlaceholder: 'juan@ejemplo.com',
+          phonePlaceholder: '+1 (555) 123-4567',
+          companyPlaceholder: 'Nombre de tu empresa',
+          messagePlaceholder: 'Cuéntanos cómo podemos ayudarte...',
+          submit: 'Enviar Mensaje'
+        },
+        findUs: 'Encuéntranos',
+        additionalInfo: 'Información Adicional',
+        info: {
+          delivery: 'Contamos con servicio de entrega a nivel nacional e internacional',
+          consulting: 'Asesoría técnica especializada sin costo adicional',
+          discounts: 'Descuentos especiales para compras al por mayor',
+          certifications: 'Certificaciones internacionales de calidad'
+        },
+        cta: {
+          title: '¿Tienes un proyecto en mente?',
+          subtitle: 'Nuestro equipo de expertos está listo para ayudarte a encontrar la mejor solución para tus necesidades energéticas',
+          button: 'Llámanos Ahora'
+        }
+      },
       categories: {
         Crudo: 'Crudo',
         Aviación: 'Aviación',
@@ -170,6 +208,44 @@ const resources = {
         visionText: 'To be recognized as the leading company in the energy sector, standing out for our innovation, sustainability and commitment to excellence. We aspire to expand our global presence while maintaining our core values and contributing to a cleaner and more efficient energy future.',
         ourTeam: 'Our Team',
         teamText: 'Committed professionals working every day to offer you the best energy solutions'
+      },
+      contact: {
+        title: 'Contact Us',
+        subtitle: 'We are here to help you',
+        address: 'Address',
+        phone: 'Phone',
+        email: 'Email',
+        schedule: 'Schedule',
+        scheduleDetails: 'Monday - Friday\n8:00 AM - 6:00 PM\nSaturdays: 9:00 AM - 2:00 PM',
+        sendMessage: 'Send Us a Message',
+        messageSent: 'Message Sent!',
+        thankYou: 'Thank you for contacting us. We will get in touch with you soon.',
+        form: {
+          fullName: 'Full Name',
+          email: 'Email',
+          phone: 'Phone',
+          company: 'Company',
+          message: 'Message',
+          namePlaceholder: 'John Doe',
+          emailPlaceholder: 'john@example.com',
+          phonePlaceholder: '+1 (555) 123-4567',
+          companyPlaceholder: 'Your company name',
+          messagePlaceholder: 'Tell us how we can help you...',
+          submit: 'Send Message'
+        },
+        findUs: 'Find Us',
+        additionalInfo: 'Additional Information',
+        info: {
+          delivery: 'We offer national and international delivery service',
+          consulting: 'Specialized technical consulting at no additional cost',
+          discounts: 'Special discounts for bulk purchases',
+          certifications: 'International quality certifications'
+        },
+        cta: {
+          title: 'Have a project in mind?',
+          subtitle: 'Our team of experts is ready to help you find the best solution for your energy needs',
+          button: 'Call Us Now'
+        }
       },
       categories: {
         Crudo: 'Crude',
